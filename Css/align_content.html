@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aula 7</title>
+
+
+    <h1>Usada quando o container tema mais de uma linha, sao organizadas
+        na vertical
+    </h1>
+
+</head>
+
+<body>
+    <h4>stretch</h4>
+    <div class="container stretch">
+        <div class="item_1">Item 1</div>
+        <div class="item_2">Item 2</div>
+        <div class="item_3">Item 3</div>
+        <div class="item_4">Item 4</div>
+        <div class="item_5">Item 5</div>
+        <div class="item_6">Item 6</div>
+        <div class="item_7">Item 7</div>
+        <div class="item_8">Item 8</div>
+        <div class="item_9">Item 9</div>
+        <div class="item_10">Item 10</div>
+        <div class="item_11">Item 11</div>
+        <div class="item_12">Item 12</div>
+        <div class="item_13">Item 13</div>
+        <div class="item_14">Item 14</div>
+        <div class="item_15">Item 15</div>
+        <div class="item_16">Item 16</div>
+    </div>
+    <h4>flex-start</h4>
+    <div class="container flex-start">
+        <div class="item_1">Item 1</div>
+        <div class="item_2">Item 2</div>
+        <div class="item_3">Item 3</div>
+        <div class="item_4">Item 4</div>
+        <div class="item_5">Item 5</div>
+        <div class="item_6">Item 6</div>
+        <div class="item_7">Item 7</div>
+        <div class="item_8">Item 8</div>
+        <div class="item_9">Item 9</div>
+        <div class="item_10">Item 10</div>
+        <div class="item_11">Item 11</div>
+        <div class="item_12">Item 12</div>
+        <div class="item_13">Item 13</div>
+        <div class="item_14">Item 14</div>
+        <div class="item_15">Item 15</div>
+        <div class="item_16">Item 16</div>
+    </div>
+    <h4>flex-end</h4>
+    <div class="container flex-end">
+        <div class="item_1">Item 1</div>
+        <div class="item_2">Item 2</div>
+        <div class="item_3">Item 3</div>
+        <div class="item_4">Item 4</div>
+        <div class="item_5">Item 5</div>
+        <div class="item_6">Item 6</div>
+        <div class="item_7">Item 7</div>
+        <div class="item_8">Item 8</div>
+        <div class="item_9">Item 9</div>
+        <div class="item_10">Item 10</div>
+        <div class="item_11">Item 11</div>
+        <div class="item_12">Item 12</div>
+        <div class="item_13">Item 13</div>
+        <div class="item_14">Item 14</div>
+        <div class="item_15">Item 15</div>
+        <div class="item_16">Item 16</div>
+    </div>
+    <h4>center</h4>
+    <div class="container center">
+        <div class="item_1">Item 1</div>
+        <div class="item_2">Item 2</div>
+        <div class="item_3">Item 3</div>
+        <div class="item_4">Item 4</div>
+        <div class="item_5">Item 5</div>
+        <div class="item_6">Item 6</div>
+        <div class="item_7">Item 7</div>
+        <div class="item_8">Item 8</div>
+        <div class="item_9">Item 9</div>
+        <div class="item_10">Item 10</div>
+        <div class="item_11">Item 11</div>
+        <div class="item_12">Item 12</div>
+        <div class="item_13">Item 13</div>
+        <div class="item_14">Item 14</div>
+        <div class="item_15">Item 15</div>
+        <div class="item_16">Item 16</div>
+    </div>
+    <h4>space-between</h4>
+    <div class="container space-between">
+        <div class="item_1">Item 1</div>
+        <div class="item_2">Item 2</div>
+        <div class="item_3">Item 3</div>
+        <div class="item_4">Item 4</div>
+        <div class="item_5">Item 5</div>
+        <div class="item_6">Item 6</div>
+        <div class="item_7">Item 7</div>
+        <div class="item_8">Item 8</div>
+        <div class="item_9">Item 9</div>
+        <div class="item_10">Item 10</div>
+        <div class="item_11">Item 11</div>
+        <div class="item_12">Item 12</div>
+        <div class="item_13">Item 13</div>
+        <div class="item_14">Item 14</div>
+        <div class="item_15">Item 15</div>
+        <div class="item_16">Item 16</div>
+    </div>
+    <h4>space-around</h4>
+    <div class="container space-around">
+        <div class="item_1">Item 1</div>
+        <div class="item_2">Item 2</div>
+        <div class="item_3">Item 3</div>
+        <div class="item_4">Item 4</div>
+        <div class="item_5">Item 5</div>
+        <div class="item_6">Item 6</div>
+        <div class="item_7">Item 7</div>
+        <div class="item_8">Item 8</div>
+        <div class="item_9">Item 9</div>
+        <div class="item_10">Item 10</div>
+        <div class="item_11">Item 11</div>
+        <div class="item_12">Item 12</div>
+        <div class="item_13">Item 13</div>
+        <div class="item_14">Item 14</div>
+        <div class="item_15">Item 15</div>
+        <div class="item_16">Item 16</div>
+    </div>
+
+    <style>
+
+        .container {
+            display: flex;
+            background-color: #cdf6eb;
+            margin: 10px auto 30px;
+            max-width: 500px;
+            height: 300px;
+            font-family: sans-serif;
+            flex-wrap: wrap;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+        .container div {
+            background: #028082;
+            margin: 8px 4px;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        h4 {
+            margin: 20px 0 0 20px;
+            font-family: sans-serif;
+            font-weight: normal;
+            font-size: 1em;
+            color: #3b3b3b;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>

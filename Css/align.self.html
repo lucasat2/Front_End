@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aula 12</title>
+</head>
+
+<body>
+
+    <h5>Pra que serve : 
+        <p>Alinhar um item especifico ignorando o align-items </p> </h5>
+
+
+    <h4>Linha</h4>
+
+    <div class="container1 align-items_flex-end">
+        <div class="item_1">Item 1</div>
+        <div class="item_2 stretch">Item 2</div>
+        <div class="item_3 flex-start">Item 3</div>
+        <div class="item_4 flex-end">Item 4</div>
+        <div class="item_4 center">Item 5</div>
+        <div class="item_6 baseline">Item 6</div>
+    </div>
+    <h4>Coluna</h4>
+    <div class="container2 align-items_flex-end column">
+        <div class="item_1">Item 1</div>
+        <div class="item_2 stretch">Item 2</div>
+        <div class="item_3 flex-start">Item 3</div>
+        <div class="item_4 flex-end">Item 4</div>
+        <div class="item_4 center">Item 5</div>
+        <div class="item_6 baseline">Item 6</div>
+    </div>
+    <style>
+        .container1,
+        .container2 {
+            display: flex;
+            background-color: #cdf6eb;
+            margin: 10px auto 30px;
+            max-width: 400px;
+            font-family: sans-serif;
+        }
+
+        .container1 {
+            height: 100px;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .align-items_flex-end {
+            align-items: flex-end;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .container1 div,
+        .container2 div {
+            background: #028082;
+            margin: 4px;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        h4 {
+            margin: 20px 0 0 20px;
+            font-family: sans-serif;
+            font-weight: normal;
+            font-size: 1em;
+            color: #3b3b3b;
+            text-align: center;
+        }
+    </style>
+
+</body>
+
+</html>

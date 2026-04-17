@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <b>Suponha:</b>
+    <p>
+        Container de 500 px <br>
+        4 itens de 200px<br>
+        sobra: 300px <br><br>
+
+        Suponha que um dos itens tenha 2 e fator de encolhimento e os outros tres 1.<br>
+        Formula: Unidade de encolhimento = espaco total - espaco dos itens / soma dos fatores de encolhimento dos
+        itens.<br>
+        Fica assim -> (500px - 800px) / 5 = -60px <br><br>
+
+        Flex items com shrkink 1 : (-60px * 1) + 200px = 140px.
+        Flex items com shrink 2 : (-60px * 2) + 200px = 80px.
+    </p>
+    </p>
+
+
+    <h4>flex-shrink com valor maior que zero define que Flex Itens devem encolher para caber no contêiner;</h4>
+    <div class="container">
+        <div class="shrink_1 basis">Item 1</div>
+        <div class="shrink_2 basis">Item 2</div>
+        <div class="shrink_1 basis">Item 3</div>
+        <div class="shrink_1 basis">Item 4</div>
+    </div>
+    <h4>flex-shrink: 0; (Flex Itens não encolhem)</h4>
+    <div class="container">
+        <div class="shrink_0 basis">Item 1</div>
+        <div class="shrink_0 basis">Item 2</div>
+        <div class="shrink_0 basis">Item 3</div>
+        <div class="shrink_0 basis">Item 4</div>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            background-color: #cdf6eb;
+            margin: 10px auto 30px;
+            max-width: 500px;
+            font-family: sans-serif;
+            flex-wrap:wrap;
+        }
+
+        .shrink_0 {
+            flex-shrink: 0;
+        }
+
+        .shrink_1 {
+            flex-shrink: 1;
+        }
+
+        .shrink_2 {
+            flex-shrink: 2;
+        }
+
+        .basis {
+            flex-basis: 200px;
+        }
+
+        .container div {
+            background: #028082;
+            margin: 8px 4px;
+            height: 80px;
+            font-size: 1em;
+            color: #fff;
+            /* as proriedades a partir daqui alinham o texto no centro */
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h4 {
+            margin: 20px 0 0 20px;
+            padding: 0 6%;
+            font-family: sans-serif;
+            font-weight: normal;
+            font-size: 1em;
+            color: #3b3b3b;
+            text-align: center;
+        }
+    </style>
+
+</body>
+
+</html>
